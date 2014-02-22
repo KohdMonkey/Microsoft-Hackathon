@@ -1,5 +1,5 @@
 /*
-Programmer: Tuan A. Tran
+@author Tuan A. Tran
 */
 import java.util.*;
 import java.text.*;
