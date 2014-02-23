@@ -28,9 +28,9 @@ public class Robot {
 	public void changeDirection(String turn){
 		turn = turn.toLowerCase();
 		direction = direction.matches("North") ? turn.matches("left")  ? "East"  : "West"  :
-			 		direction.matches("South") ? turn.matches("left")  ? "West"  : "East"  :
-			 		direction.matches("East")  ? turn.matches("left")  ? "South" : "North" :
-			 									 turn.matches("left")  ? "North" : "South";		
+			    direction.matches("South") ? turn.matches("left")  ? "West"  : "East"  :
+	                    direction.matches("East")  ? turn.matches("left")  ? "South" : "North" :
+			 			         turn.matches("left")  ? "North" : "South";		
 	}//end changeDirection
 	
 	
