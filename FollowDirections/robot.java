@@ -1,4 +1,3 @@
-
 public class Robot {
 	String direction = "";
 	int xPos;
@@ -28,27 +27,10 @@ public class Robot {
 	*/
 	public void changeDirection(String turn){
 		turn = turn.toLowerCase();
-		if(direction.matches("North")){
-			if(turn.matches("left"))
-				direction = "East";
-			else
-				direction = "West";			
-		}else if(direction.matches("South")){ 
-			if(turn.matches("left"))
-				direction = "West";
-			else
-				direction = "East";			
-		}else if(direction.matches("East")){
-			if(turn.matches("left"))
-				direction = "South";
-			else
-				direction = "North";
-		}else{
-			if(turn.matches("left"))
-				direction = "North";
-			else
-				direction = "South";
-		}		
+		direction = direction.matches("North") ? turn.matches("left")  ? "East"  : "West"  :
+			 		direction.matches("South") ? turn.matches("left")  ? "West"  : "East"  :
+			 		direction.matches("East")  ? turn.matches("left")  ? "South" : "North" :
+			 									 turn.matches("left")  ? "North" : "South";		
 	}//end changeDirection
 	
 	
