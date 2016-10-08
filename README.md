@@ -1,4 +1,4 @@
 Microsoft-Hackathon
 ===================
 
-A compilation of problems from a recent Microsoft hackathon.
+A compilation of problems from an old Microsoft hackathon.
